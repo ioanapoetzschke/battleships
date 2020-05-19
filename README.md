@@ -35,10 +35,10 @@ Wenn Gegner schießt :
   
   Wenn selber geschossen wird:
     1. Den Result aus Response wird ausgewertet: wenn ein Schiff getroffen wurde, wird der Location aus PartyGrid den Schiff zugeordnet. Die Anzahl der Schüsse wird hochgezählt (in ShipPlacement). 
-    Es wird eine Nachbarn Location ausgewählt , die noch nicht bisher geschossen wurde
+    Es wird eine Nachbarn Location gesucht , die noch nicht bisher geschossen wurde
     
-    2. Wenn der Result negativ ist, dann wird geschaut ob in PartyGrid eine Location gibt, die einen Schiff enthält, welcher noch nicht gesunken ist
-    - Wenn ja, dann wird nach eine Nachbarn Location ausgewählt , die noch nicht bisher geschossen wurde (Location -> shot == false)
+    2. Wenn der Result negativ ist, dann wird geschaut ob in PartyGrid eine Location gibt, die einen Schiff enthält, welcher noch nicht versunken ist
+    - Wenn ja, dann wird  eine Nachbarn Location gesucht , die noch nicht bisher geschossen wurde (Location -> shot == false)
     - Wenn nicht , dann wird eine zufällige Location generiert, die noch nicht bisher geschossen wurde 
     
     
