@@ -9,10 +9,23 @@ Implementierung (kurze Beschreibung):
 - für OwnGrid werden nur Location gespeichert die einen Schiff enthalten
 - für PartyGrid werden nur Location gespeichert die geschossen wurden . (Bei jedem Versuch wird eine Location gespeichert)
 
+Es gibt 2 Routen : /start und /play
+
+Route /start ist für die Initialisierung
+
 Initialisierung:
 - Vor dem Starten des Spieles werden die Grids vorbereiten
 - Für OwnGrid werden die Locations mit Schiffe erstellt.Die Schiffe werden jedes Mal zufällig plaziert .
 - Für PartyGrid wird lediglich nur den Grid erstellt
+
+Route /play: 
+
+Aufbau:
+ Request und Response beinhaltet : 
+ 
+ "shot" : die Position (z.B A-6) , 
+ "result" : Position und Ergebniss ( z.B : " B-7: HIT CRUISER"  oder "B-7: MISS" ,  
+ "message" : zusätzliche Infos wie z.B. wenn der Schiff versunken ist
 
 Wenn Gegner schießt :
   - es wird geschaut, ob es ein Location in OwnGrid gibt (Für OwnGrid werden nur Locations gespeichert, die auch einen Schiff enthalten).
