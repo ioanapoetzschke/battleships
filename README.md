@@ -4,6 +4,7 @@ Implementierung (kurze Beschreibung):
 
 - es gibt 2 Grids : OwnGrid und PartyGrid (Gegner Grid)
 - eine Position in Grid ist durch eine Location representiert
+- Bereich der Positionen : von A bis H und von 1 bis 8 
 - Die Location beinhaltet : Koordonaten x und y , die Zuordnung zu einem Schiff (ship_placement), Zuordnung zum Grid (OwnGrid oder Gegner Grid) und einen Feld "shot" (es wird dort gemerkt ob die Location schon mal verwendet wurde)
 
 - für OwnGrid werden nur Location gespeichert die einen Schiff enthalten
