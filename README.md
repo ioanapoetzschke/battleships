@@ -29,11 +29,11 @@ Aufbau:
 
 Wenn Gegner schießt :
   - es wird geschaut, ob es ein Location in OwnGrid gibt (Für OwnGrid werden nur Locations gespeichert, die auch einen Schiff enthalten).
-  - Wenn es einen Location gefunden wurde,  dann heisst es dass ein Shiff getroffen wurde . Es wird dann dementsprechend der Response mit "HIT" und Name des Schiffes ausgegeben.
+  - Wenn es einen Location gefunden wurde,  dann heisst es dass ein Schiff getroffen wurde . Es wird dann dementsprechend der Response mit "HIT" und Name des Schiffes ausgegeben.
   - Wenn die Location für OwnGrid nicht vorhanden ist, dann heisst es dass es kein Schiff in OwnGrid getroffen wurde.
   
   Wenn selber geschossen wird:
-    1. Den Result aus Response wird ausgewertet: wenn ein Schif getroffen wurde, wird der Loaction aus PartyGrid den Schiff zugeornet. Die Anzahl der Schüsse wird hochgezählt (in SchipPlacement). 
+    1. Den Result aus Response wird ausgewertet: wenn ein Schiff getroffen wurde, wird der Location aus PartyGrid den Schiff zugeordnet. Die Anzahl der Schüsse wird hochgezählt (in ShipPlacement). 
     Es wird eine Nachbarn Location ausgewählt , die noch nicht bisher geschossen wurde
     
     2. Wenn der Result negativ ist, dann wird geschaut ob in PartyGrid eine Location gibt, die einen Schiff enthält, welcher noch nicht gesunken ist
